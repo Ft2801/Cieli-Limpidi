@@ -1,3 +1,21 @@
+# robots.txt for Cieli Limpidi - Gruppo Astrofili Abruzzesi
+# Astrofotografia e Astrophotography in Abruzzo
+
 User-agent: *
 Allow: /
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://ft2801.github.io/Cieli-Limpidi/sitemap.xml
