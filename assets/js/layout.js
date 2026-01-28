@@ -41,9 +41,7 @@ function renderHeader() {
             <a href="${prefix}index.html" class="logo ajax-link">Cieli Limpidi</a>
             
             <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="hamburger-inner"></span>
             </button>
 
             <ul class="nav-links">
