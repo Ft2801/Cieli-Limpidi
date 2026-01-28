@@ -193,7 +193,7 @@ document.addEventListener('click', async (e) => {
             const targetPos = elementRect.top + window.pageYOffset - navbarHeight - extraPadding;
             const startPos = window.pageYOffset;
             const distance = targetPos - startPos;
-            const duration = 800;
+            const duration = 1000; // Slower 1000ms smooth scroll (doubled)
             let start = null;
 
             function step(timestamp) {
@@ -209,8 +209,13 @@ document.addEventListener('click', async (e) => {
 
                 if (progress < duration) {
                     window.requestAnimationFrame(step);
+                } else {
+                    document.documentElement.style.scrollBehavior = ''; // Restore CSS smooth scroll
                 }
             }
+
+            // Disable CSS smooth scroll to prevent conflict with JS manual scroll
+            document.documentElement.style.scrollBehavior = 'auto';
 
             window.requestAnimationFrame(step);
         }
