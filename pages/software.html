@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TStar Software - Elaborazione Immagini Astronomiche | Cieli Limpidi</title>
+    <meta name="description"
+        content="TStar: software professionale per elaborazione astrofotografia Pescara e Abruzzo. C++17/Qt6, stretching GHS, AI noise reduction, calibrazione colore PCC.">
+    <meta name="keywords"
+        content="astrofili abruzzo, astrofili pescara, astrofotografia pescara, astrofotografia abruzzo, TStar, software astronomia, elaborazione immagini, astrofotografia, Fabio Tempera, C++, Qt6, GHS stretch, deep sky, FITS, XISF, processing astronomico, AI noise reduction, Cieli Limpidi">
+    <meta name="author" content="Fabio Tempera">
+    <meta name="creator" content="Fabio Tempera - Cieli Limpidi">
+    <link rel="canonical" href="https://ft2801.github.io/Cieli-Limpidi/pages/software.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ft2801.github.io/Cieli-Limpidi/pages/software.html">
+    <meta property="og:title" content="TStar - Software Elaborazione Astrofotografia">
+    <meta property="og:description"
+        content="Software professionale C++17/Qt6 per astrofotografia Pescara e Abruzzo. Stretching avanzato, AI integration e calibrazione colore fotometrica.">
+    <meta property="og:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/TStar.webp">
+    <meta property="og:site_name" content="Cieli Limpidi">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ft2801.github.io/Cieli-Limpidi/pages/software.html">
+    <meta name="twitter:title" content="TStar - Software Elaborazione Astrofotografia">
+    <meta name="twitter:description" content="Software professionale per astrofotografia Pescara e Abruzzo.">
+    <meta name="twitter:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/TStar.webp">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TStar",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Windows, Linux, macOS",
+      "description": "Software professionale per elaborazione immagini astronomiche basato su C++17 e Qt6",
+      "url": "https://ft2801.github.io/Cieli-Limpidi/pages/software.html",
+      "downloadUrl": "https://github.com/Ft2801/TStar/releases",
+      "author": {
+        "@type": "Person",
+        "name": "Fabio Tempera"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cieli Limpidi"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "featureList": [
+        "Generalized Hyperbolic Stretch (GHS)",
+        "AI Noise Reduction - Cosmic Clarity",
+        "Calibrazione Colore Fotometrica (PCC)",
+        "Supporto FITS, XISF, TIFF",
+        "StarNet++ e GraXpert integration",
+        "Architettura C++17/Qt6"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <canvas id="starfield"></canvas>
+    <div id="main-content">
+        <!-- Header Section -->
+        <div class="container" style="padding-top: 120px; padding-bottom: 20px; text-align: center;">
+            <h1 style="margin-bottom: 10px;">TStar</h1>
+            <p style="color: var(--accent-cyan); font-style: italic; margin-bottom: 25px;">A cura di Fabio Tempera</p>
+            <a href="https://github.com/Ft2801/TStar/releases" target="_blank" class="btn" style="margin: 0;">Scarica da
+                GitHub</a>
+        </div>
+
+        <section class="section" style="padding-top: 30px;">
+            <div class="container">
+                <div class="grid-3 fade-in-up" style="grid-template-columns: 1fr 2fr; align-items: start; gap: 50px;">
+                    <div>
+                        <img src="../assets/images/TStar.webp"
+                            alt="Interfaccia del software TStar per elaborazione immagini astronomiche"
+                            class="tstar-logo glow-box"
+                            style="width: 90%; margin: 0 auto; display: block; border-radius: 15px; border: 1px solid var(--border-color);">
+                    </div>
+                    <div>
+                        <h2 style="margin-bottom: 25px; color: var(--accent-cyan);">Panoramica</h2>
+                        <p style="margin-bottom: 25px; line-height: 1.9; color: var(--text-muted);">
+                            TStar si distingue come una potente piattaforma di elaborazione immagini basata su
+                            architettura C++17 e Qt6, progettata esplicitamente per rispondere alle esigenze
+                            dell'astrofotografia moderna e produrre risultati di grado scientifico. Il software offre un
+                            ambiente di lavoro MDI (Multi-Document Interface) estremamente flessibile che garantisce la
+                            piena compatibilità con file FITS/XISF/TIFF a 8, 16 e 32 bit, sia interi che in virgola
+                            mobile, permettendo un controllo totale sui dati grezzi lineari.
+                        </p>
+
+                        <p style="margin-bottom: 25px; line-height: 1.9; color: var(--text-muted);">
+                            Il cuore del flusso di lavoro in TStar risiede nella sua capacità di trasformare il segnale
+                            lineare in immagini visibili con estrema precisione: grazie a strumenti all'avanguardia come
+                            il Generalized Hyperbolic Stretch (GHS) e l'ArcSinh Stretch, è possibile gestire in modo
+                            indipendente ombre, mezzitoni e luci, preservando la saturazione e i dettagli più fini. La
+                            fedeltà cromatica è assicurata dalla Calibrazione Colore Fotometrica (PCC), che risolve
+                            astrometricamente l'immagine e calibra i colori basandosi sui cataloghi stellari Gaia e
+                            APASS.
+                        </p>
+
+                        <p style="line-height: 1.9; color: var(--text-muted);">
+                            Un aspetto distintivo di TStar è l'integrazione nativa di tecnologie basate
+                            sull'Intelligenza Artificiale per il restauro dell'immagine. Il modulo Cosmic Clarity
+                            sfrutta il Deep Learning per la riduzione del rumore e lo sharpening, mentre la
+                            compatibilità con StarNet++ e GraXpert facilita operazioni complesse come la rimozione delle
+                            stelle e l'estrazione avanzata dei gradienti.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="fade-in-up" style="margin-top: 80px;">
+                    <h2 style="text-align: center; margin-bottom: 40px;">Caratteristiche Principali</h2>
+                    <div class="grid-3">
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Architettura Moderna</h3>
+                            <p style="color: var(--text-muted);">
+                                Sviluppato in C++17 con Qt6 per prestazioni ottimali e interfaccia nativa
+                                multipiattaforma.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Stretching Avanzato</h3>
+                            <p style="color: var(--text-muted);">
+                                GHS, ArcSinh e altre funzioni per il controllo preciso di ombre, mezzitoni e luci.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">AI Integration</h3>
+                            <p style="color: var(--text-muted);">
+                                Cosmic Clarity per riduzione rumore AI-based, compatibilità con StarNet++ e GraXpert.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Calibrazione Colore</h3>
+                            <p style="color: var(--text-muted);">
+                                PCC con risoluzione astrometrica basata su cataloghi Gaia e APASS.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Formati Supportati</h3>
+                            <p style="color: var(--text-muted);">
+                                FITS, XISF, TIFF a 8, 16, 32 bit - interi e floating point.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Maschere Avanzate</h3>
+                            <p style="color: var(--text-muted);">
+                                Sistema di mascheratura per luminanza, crominanza e caratteristiche stellari.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

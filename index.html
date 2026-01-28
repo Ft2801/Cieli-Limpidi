@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cieli Limpidi - Astrofotografia e Astrofili in Abruzzo | Gruppo Astronomia</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Gruppo astrofili Abruzzo e Pescara specializzato in astrofotografia e deep sky imaging. Scopri le immagini astronomiche di astrofotografia Pescara e Abruzzo e il software TStar.">
+    <meta name="keywords"
+        content="astrofili abruzzo, astrofili pescara, astrofotografia pescara, astrofotografia abruzzo, Cieli Limpidi, cieli-limpidi, astrofotografia, astrophoto, astronomia, deep sky, cielo profondo, nebulose, galassie, osservazione astronomica, TStar, imaging astronomico">
+    <meta name="author" content="Cieli Limpidi">
+    <meta name="creator" content="Cieli Limpidi - Gruppo Astrofili Abruzzesi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ft2801.github.io/Cieli-Limpidi/">
+    <meta name="google-site-verification" content="9-BXZmG4fmiha2tDLhSlW_gI8XIvoNpyeNT2-x5YxdE" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ft2801.github.io/Cieli-Limpidi/">
+    <meta property="og:title" content="Cieli Limpidi - Astrofotografia e Astrofili in Abruzzo">
+    <meta property="og:description"
+        content="Gruppo astrofili Abruzzo e Pescara specializzato in astrofotografia e astrophotography. Scopri le immagini di astrofotografia Pescara e Abruzzo e il software TStar.">
+    <meta property="og:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Cieli Limpidi">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ft2801.github.io/Cieli-Limpidi/">
+    <meta name="twitter:title" content="Cieli Limpidi - Astrofotografia e Astrofili in Abruzzo">
+    <meta name="twitter:description"
+        content="Gruppo astrofili Abruzzo e Pescara specializzato in astrofotografia e astrophotography. Scopri le immagini di astrofotografia Pescara e Abruzzo.">
+    <meta name="twitter:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/logo.png">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cieli Limpidi",
+      "alternateName": "cieli-limpidi",
+      "url": "https://ft2801.github.io/Cieli-Limpidi/",
+      "logo": "https://ft2801.github.io/Cieli-Limpidi/assets/images/logo.png",
+      "description": "Gruppo astrofili abruzzesi specializzato in astrofotografia, astrophotography e osservazione del cielo profondo",
+      "email": "fabiot2801@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Abruzzo",
+        "addressCountry": "IT"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Abruzzo, Italia"
+      },
+      "sameAs": [
+        "https://github.com/Ft2801/Cieli-Limpidi"
+      ],
+      "knowsAbout": [
+        "Astrofotografia",
+        "Astrophotography", 
+        "Astronomia",
+        "Deep Sky",
+        "Osservazione astronomica",
+        "Imaging astronomico"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <canvas id="starfield"></canvas>
+
+    <div id="main-content">
+        <header class="hero">
+            <div class="container">
+                <h1>Cieli Limpidi<br><span style="font-size: 0.5em; color: var(--accent-cyan); font-weight: 300;">Gruppo
+                        Astrofili Abruzzesi</span></h1>
+                <p>Passione per l'astronomia e l'astrofotografia dal cuore dell'Abruzzo. Esploriamo insieme le
+                    meraviglie del cosmo.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="pages/gallery.html" class="btn">Esplora la Galleria</a>
+                    <a href="#about-section" class="btn btn-outline">Scopri di Più &darr;</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Preview Section -->
+        <section id="about-section" class="section fade-in-up">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 20px;">
+                    <h2>Chi Siamo</h2>
+                </div>
+
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p style="margin-bottom: 30px; color: var(--text-muted); line-height: 1.9; font-size: 1.1rem;">
+                        <strong style="color: var(--accent-cyan);">Cieli Limpidi</strong> è un'associazione di astrofili
+                        abruzzesi che condividono la passione per l'osservazione e la fotografia del cielo profondo.
+                        Nati dall'amore per le stelle e il desiderio di condividere questa passione, organizziamo
+                        sessioni osservative,
+                        eventi divulgativi e collaboriamo con altri gruppi astronomici della regione.
+                    </p>
+                    <a href="pages/storia.html" class="btn">La Nostra Storia</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Gallery Preview Section -->
+        <section class="section fade-in-up">
+            <div class="container">
+                <div class="section-header"
+                    style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px;">
+                    <div>
+                        <h2 style="margin-bottom: 10px;">Le Nostre Immagini</h2>
+                        <p style="color: var(--text-muted);">Una selezione degli scatti realizzati dai nostri membri</p>
+                    </div>
+                    <a href="pages/gallery.html" class="btn-text"
+                        style="color: var(--accent-cyan); text-decoration: none;">Vedi tutte &rarr;</a>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card">
+                        <a href="pages/gallery.html">
+                            <div class="image-overflow">
+                                <img src="assets/images/Orione_preview.webp"
+                                    alt="Nebulosa di Orione M42 - Astrofotografia Cieli Limpidi"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Nebulose</h3>
+                                <p class="card-desc">Deep Sky Imaging</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="pages/gallery.html">
+                            <div class="image-overflow">
+                                <img src="assets/images/Andromeda_preview.webp"
+                                    alt="Galassia di Andromeda M31 - Fotografia gruppo Cieli Limpidi"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Galassie</h3>
+                                <p class="card-desc">Oggetti del cielo profondo</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="pages/gallery.html">
+                            <div class="image-overflow">
+                                <img src="assets/images/vialattea_preview.webp"
+                                    alt="Via Lattea fotografata in Abruzzo di notte"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Via Lattea</h3>
+                                <p class="card-desc">Paesaggi notturni</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="section fade-in-up">
+            <div class="container">
+                <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
+                    <div style="order: 2;">
+                        <span
+                            style="color: var(--accent-cyan); font-weight: bold; letter-spacing: 2px; font-size: 0.9rem;">SOFTWARE
+                            ASTRONOMICO</span>
+                        <h2 style="margin: 10px 0 20px;">TStar</h2>
+                        <p style="margin-bottom: 10px; color: var(--text-muted); font-style: italic;">A cura di Fabio
+                            Tempera</p>
+                        <p style="margin-bottom: 20px; color: var(--text-muted);">
+                            Una potente piattaforma di elaborazione immagini basata su C++17 e Qt6. Progettata per
+                            controllo totale sui dati grezzi lineari e risultati di grado scientifico.
+                        </p>
+                        <ul style="margin-bottom: 30px; list-style: none;">
+                            <li style="margin-bottom: 10px; color: var(--text-color);">&#8226; Architettura C++17 & Qt6
+                            </li>
+                            <li style="margin-bottom: 10px; color: var(--text-color);">&#8226; Gestione MDI Flessibile
+                            </li>
+                            <li style="margin-bottom: 10px; color: var(--text-color);">&#8226; AI Noise Reduction</li>
+                        </ul>
+                        <a href="pages/software.html" class="btn">Scopri TStar</a>
+                    </div>
+                    <div style="order: 1;">
+                        <img src="assets/images/TStar.webp"
+                            alt="Interfaccia del software TStar per elaborazione astronomica"
+                            class="tstar-logo glow-box"
+                            style="width: 60%; display: block; margin: 0 auto; border-radius: 15px; border: 1px solid var(--border-color);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutorials Section -->
+        <section class="section fade-in-up">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2 style="margin-bottom: 20px;">Condividere la Conoscenza</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; line-height: 1.8;">
+                        Crediamo fermamente che la condivisione sia alla base della crescita scientifica e tecnica.
+                        Nella sezione Tutorial troverai guide approfondite sulle tecniche di acquisizione ed
+                        elaborazione,
+                        dalla calibrazione dei file grezzi all'utilizzo avanzato del software TStar.
+                    </p>
+                    <a href="pages/tutorials.html" class="btn">Vai ai Tutorial</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Join Section -->
+        <section class="section fade-in-up">
+            <div class="container">
+                <div class="feature-card" style="max-width: 700px; margin: 0 auto;">
+
+                    <h2 style="margin-bottom: 15px;">Unisciti a Noi</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 25px; line-height: 1.8;">
+                        Sei appassionato di astronomia e vivi in Abruzzo? Unisciti al nostro gruppo per condividere
+                        serate osservative, scambiare esperienze e crescere insieme nella passione per il cielo
+                        notturno. Invia una email all'indirizzo qui sotto:
+                    </p>
+                    <a href="mailto:fabiot2801@gmail.com"
+                        style="color: var(--accent-primary); font-size: 1.2rem; font-weight: bold;">fabiot2801@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+# robots.txt for Cieli Limpidi
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ft2801.github.io/Cieli-Limpidi/sitemap.xml

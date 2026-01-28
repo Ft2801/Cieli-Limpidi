@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Astrofotografia - Guide TStar e Processing | Cieli Limpidi</title>
+    <meta name="description"
+        content="Tutorial astrofotografia Pescara e Abruzzo: guide complete su software TStar e tecniche deep sky. Impara l'astrofotografia in Abruzzo e Pescara.">
+    <meta name="keywords"
+        content="astrofili abruzzo, astrofili pescara, astrofotografia pescara, astrofotografia abruzzo, tutorial astrofotografia, guida TStar, post processing, elaborazione immagini astronomiche, stretching, stacking, calibrazione, deep sky tutorial, astrophotography guide, Cieli Limpidi">
+    <meta name="author" content="Cieli Limpidi">
+    <meta name="creator" content="Cieli Limpidi - Gruppo Astrofili Abruzzesi">
+    <link rel="canonical" href="https://ft2801.github.io/Cieli-Limpidi/pages/tutorials.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ft2801.github.io/Cieli-Limpidi/pages/tutorials.html">
+    <meta property="og:title" content="Tutorial Astrofotografia - Guide Processing e TStar">
+    <meta property="og:description"
+        content="Guide complete su astrofotografia Pescara e Abruzzo, tecniche di post-processing e utilizzo del software TStar.">
+    <meta property="og:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/TStar.webp">
+    <meta property="og:site_name" content="Cieli Limpidi">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ft2801.github.io/Cieli-Limpidi/pages/tutorials.html">
+    <meta name="twitter:title" content="Tutorial Astrofotografia - Cieli Limpidi">
+    <meta name="twitter:description" content="Guide complete su astrofotografia Pescara e Abruzzo e TStar.">
+    <meta name="twitter:image" content="https://ft2801.github.io/Cieli-Limpidi/assets/images/TStar.webp">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Tutorial & Risorse Astrofotografia",
+      "description": "Collezione di guide e tutorial per astrofotografia e elaborazione immagini astronomiche",
+      "url": "https://ft2801.github.io/Cieli-Limpidi/pages/tutorials.html",
+      "author": {
+        "@type": "Organization",
+        "name": "Cieli Limpidi"
+      },
+      "about": [
+        "Astrofotografia",
+        "Post Processing",
+        "Software TStar",
+        "Elaborazione immagini astronomiche",
+        "Deep Sky Imaging"
+      ],
+      "hasPart": [
+        {
+          "@type": "HowTo",
+          "name": "Guida al Post Processing",
+          "description": "Tecniche avanzate di elaborazione per astrofotografia"
+        },
+        {
+          "@type": "TechArticle",
+          "name": "Manuale Utente TStar",
+          "description": "Documentazione ufficiale per il software TStar"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <canvas id="starfield"></canvas>
+    <div id="main-content">
+        <div class="section" style="padding-top: 150px;">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Tutorial & Risorse</h1>
+                    <p>Guide pratiche per migliorare le tue tecniche di acquisizione ed elaborazione</p>
+                </div>
+
+                <!-- Introduction -->
+                <div class="fade-in-up" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+                    <p style="color: var(--text-muted); line-height: 1.9;">
+                        Crediamo nella condivisione della conoscenza. Qui troverai guide approfondite sulle tecniche
+                        di post-processing e sull'utilizzo del software TStar, per aiutarti a ottenere il massimo
+                        dai tuoi dati astronomici.
+                    </p>
+                </div>
+
+                <!-- Tutorial Cards -->
+                <div class="grid-3 fade-in-up" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+
+                    <!-- Post Processing Guide -->
+                    <article class="card"
+                        style="display: flex; flex-direction: row; align-items: center; padding: 25px;">
+                        <div
+                            style="width: 150px; height: 100px; margin-right: 25px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(31, 111, 235, 0.1); border-radius: 10px; border: 1px solid var(--border-color);">
+                            <img src="../assets/images/postproc_preview.webp"
+                                alt="Anteprima guida al post-processing per astrofotografia"
+                                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 class="card-title">Guida al Post Processing</h3>
+                            <p class="card-desc">Tecniche avanzate di elaborazione per astrofotografia. Dalla
+                                calibrazione allo stretching finale.</p>
+                            <a href="../assets/docs/Post_Processing.pdf" download class="btn"
+                                style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Scarica Guida (PDF)</a>
+                        </div>
+                    </article>
+
+                    <!-- TStar Manual -->
+                    <article class="card"
+                        style="display: flex; flex-direction: row; align-items: center; padding: 25px;">
+                        <div
+                            style="width: 150px; height: 100px; margin-right: 25px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(31, 111, 235, 0.1); border-radius: 10px; border: 1px solid var(--border-color);">
+                            <img src="../assets/images/TStar.webp" alt="Logo e icona del software TStar"
+                                style="height: 80%; width: auto; max-width: 100%; object-fit: contain;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 class="card-title">Manuale Utente TStar</h3>
+                            <p class="card-desc">Documentazione ufficiale per il software TStar. Impara a usare tutte le
+                                funzionalità.</p>
+                            <a href="../assets/docs/TStar.pdf" download class="btn"
+                                style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Scarica Manuale
+                                (PDF)</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Additional Resources Section -->
+                <div class="fade-in-up" style="margin-top: 80px;">
+                    <h2 style="text-align: center; margin-bottom: 40px;">Argomenti Trattati</h2>
+                    <div class="grid-3">
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Acquisizione</h3>
+                            <p style="color: var(--text-muted);">
+                                Come pianificare e acquisire i dati grezzi ottimali per l'elaborazione.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Calibrazione</h3>
+                            <p style="color: var(--text-muted);">
+                                Dark, flat, bias e la corretta calibrazione dei frame.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Stacking</h3>
+                            <p style="color: var(--text-muted);">
+                                Tecniche di integrazione per massimizzare il rapporto segnale/rumore.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Stretching</h3>
+                            <p style="color: var(--text-muted);">
+                                Trasformare il segnale lineare in immagini spettacolari.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Colore</h3>
+                            <p style="color: var(--text-muted);">
+                                Calibrazione cromatica e gestione delle palette narrowband.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+
+                            <h3 style="margin-bottom: 15px;">Finitura</h3>
+                            <p style="color: var(--text-muted);">
+                                Riduzione rumore, sharpening e tocchi finali per l'immagine perfetta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Notice -->
+                <div class="fade-in-up"
+                    style="text-align: center; margin-top: 60px; padding: 30px; background: var(--card-bg); border-radius: 15px; border: 1px solid var(--border-color);">
+                    <h3 style="margin-bottom: 15px; color: var(--accent-cyan);">Altri Tutorial in Arrivo</h3>
+                    <p style="color: var(--text-muted);">
+                        Stiamo lavorando a nuove guide e video tutorial. Resta aggiornato!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
