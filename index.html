@@ -184,17 +184,37 @@
         </section>
 
         <!-- Software Section -->
-        <section class="section fade-in-up">
+        <style>
+            @media (max-width: 768px) {
+                #software-section .tstar-grid {
+                    text-align: center;
+                }
+
+                #software-section .btn {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: fit-content;
+                }
+
+                #software-section ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+        <section id="software-section" class="section fade-in-up">
             <div class="container">
-                <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
+                <div class="grid-3 tstar-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
                     <div style="order: 2;">
                         <span
-                            style="color: var(--accent-cyan); font-weight: bold; letter-spacing: 2px; font-size: 0.9rem;">SOFTWARE
-                            ASTRONOMICO</span>
+                            style="color: var(--accent-cyan); font-weight: bold; letter-spacing: 2px; font-size: 0.9rem; text-transform: uppercase;">Software
+                            Astronomico</span>
                         <h2 style="margin: 10px 0 20px;">TStar</h2>
                         <p style="margin-bottom: 10px; color: var(--text-muted); font-style: italic;">A cura di Fabio
                             Tempera</p>
-                        <p style="margin-bottom: 20px; color: var(--text-muted);">
+                        <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
                             Una potente piattaforma di elaborazione immagini basata su C++17 e Qt6. Progettata per
                             controllo totale sui dati grezzi lineari e risultati di grado scientifico.
                         </p>
