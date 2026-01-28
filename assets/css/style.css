@@ -170,17 +170,17 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     background: var(--nav-bg);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 1000;
-    transition: padding 0.3s, box-shadow 0.3s;
+    transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
     border-bottom: 1px solid var(--border-color);
 }
 
 .navbar.scrolled {
-    padding: 12px 0;
+    padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -306,6 +306,11 @@ a:hover {
     border-color: var(--accent-primary);
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(243, 156, 18, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
 }
 
 .btn:hover::before {
@@ -657,7 +662,7 @@ footer {
     /* Navigation */
     .nav-container {
         justify-content: space-between !important;
-        padding: 15px 20px;
+        padding: 0 35px;
     }
 
     .hamburger {
