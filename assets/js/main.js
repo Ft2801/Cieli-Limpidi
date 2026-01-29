@@ -146,9 +146,54 @@ function initScrollAnimations() {
     elements.forEach(el => observer.observe(el));
 }
 
+// --- Gallery Filter Logic ---
+function initGalleryFilters() {
+    const buttons = document.querySelectorAll('.btn-filter');
+    const sections = document.querySelectorAll('.category-section');
+
+    if (!buttons.length || !sections.length) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            buttons.forEach(b => {
+                b.classList.remove('active');
+                b.style.backgroundColor = 'transparent';
+                b.style.color = 'var(--text-color)';
+            });
+
+            // Add active class to clicked button
+            btn.classList.add('active');
+            btn.style.backgroundColor = 'var(--accent-cyan)';
+            btn.style.color = 'var(--bg-color)';
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            sections.forEach(section => {
+                if (filterValue === 'all' || section.getAttribute('data-category') === filterValue) {
+                    section.style.display = 'block';
+                    section.classList.add('fade-in-up');
+                    section.classList.add('visible');
+                } else {
+                    section.style.display = 'none';
+                    section.classList.remove('visible');
+                }
+            });
+        });
+    });
+
+    // Set initial active state style
+    const activeBtn = document.querySelector('.btn-filter.active');
+    if (activeBtn) {
+        activeBtn.style.backgroundColor = 'var(--accent-cyan)';
+        activeBtn.style.color = 'var(--bg-color)';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initPageAnimations();
     initScrollAnimations();
+    initGalleryFilters();
 });
 
 
@@ -294,6 +339,7 @@ async function navigateTo(url, pushState = true) {
                 mainContent.style.transform = 'translateY(0)';
                 initPageAnimations();
                 initScrollAnimations();
+                initGalleryFilters();
             });
         });
 

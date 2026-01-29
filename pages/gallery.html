@@ -73,165 +73,320 @@
                 </div>
 
                 <!-- Gallery Grid -->
-                <div class="grid-3">
-                    <!-- Gallery Item 1: Andromeda -->
-                    <article class="card">
-                        <a href="../assets/images/Andromeda.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/Andromeda_preview.webp"
-                                alt="Galassia di Andromeda M31 fotografata da Cieli Limpidi"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Galassia di Andromeda</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 2h30</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
+                <!-- Filters -->
+                <div class="filter-container"
+                    style="text-align: center; margin-bottom: 40px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <button class="btn-filter active" data-filter="all"
+                        style="background: transparent; border: 1px solid var(--accent-cyan); color: var(--text-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.3s ease;">
+                        Tutti
+                    </button>
+                    <button class="btn-filter" data-filter="reflex"
+                        style="background: transparent; border: 1px solid var(--accent-cyan); color: var(--text-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.3s ease;">
+                        Reflex / Mirrorless
+                    </button>
+                    <button class="btn-filter" data-filter="smart"
+                        style="background: transparent; border: 1px solid var(--accent-cyan); color: var(--text-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.3s ease;">
+                        Telescopi Smart
+                    </button>
+                    <button class="btn-filter" data-filter="camera"
+                        style="background: transparent; border: 1px solid var(--accent-cyan); color: var(--text-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.3s ease;">
+                        Fotocamere Astronomiche
+                    </button>
+                </div>
 
-                    <!-- Gallery Item 2: Orione -->
-                    <article class="card">
-                        <a href="../assets/images/Orione.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/Orione_preview.webp"
-                                alt="Nebulosa di Orione M42 con dettagli del trapezio"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Nebulosa di Orione</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 1h</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                <!-- Category: Reflex / Mirrorless -->
+                <div class="category-section" data-category="reflex" style="margin-bottom: 60px;">
+                    <h2
+                        style="color: var(--accent-cyan); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 30px;">
+                        Reflex / Mirrorless</h2>
+                    <div class="grid-3">
+                        <!-- Gallery Item 1: Andromeda -->
+                        <article class="card">
+                            <a href="../assets/images/Andromeda.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/Andromeda_preview.webp"
+                                    alt="Galassia di Andromeda M31 fotografata da Cieli Limpidi"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Galassia di Andromeda</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 2h30</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!-- Gallery Item 3: Cintura Orione -->
-                    <article class="card">
-                        <a href="../assets/images/Orion_Belt.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/Orion_Belt_preview.webp"
-                                alt="Cintura di Orione e Nebulosa Fiamma"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Cintura di Orione</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 5h</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                        <!-- Gallery Item 2: Orione -->
+                        <article class="card">
+                            <a href="../assets/images/Orione.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/Orione_preview.webp"
+                                    alt="Nebulosa di Orione M42 con dettagli del trapezio"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Nebulosa di Orione</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 1h</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!-- Gallery Item 4: Testa di Cavallo -->
-                    <article class="card">
-                        <a href="../assets/images/Orion_Horse.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/Orion_Horse_preview.webp"
-                                alt="Nebulosa Testa di Cavallo nella costellazione di Orione"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Orione e Testa di Cavallo</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 2h</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                        <!-- Gallery Item 3: Cintura Orione -->
+                        <article class="card">
+                            <a href="../assets/images/Orion_Belt.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/Orion_Belt_preview.webp"
+                                    alt="Cintura di Orione e Nebulosa Fiamma"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Cintura di Orione</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 5h</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!-- Gallery Item 5: Pleiadi -->
-                    <article class="card">
-                        <a href="../assets/images/pleiadi.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/pleiadi_preview.webp" alt="Pleiadi M45 - Ammasso stellare aperto"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Le Pleiadi</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 4h30</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                        <!-- Gallery Item 4: Testa di Cavallo (Fabio) -->
+                        <article class="card">
+                            <a href="../assets/images/Orion_Horse.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/Orion_Horse_preview.webp"
+                                    alt="Nebulosa Testa di Cavallo nella costellazione di Orione"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Orione e Testa di Cavallo</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 2h</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!-- Gallery Item 6: Rho Ophiuchi -->
-                    <article class="card">
-                        <a href="../assets/images/nuberho.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/nuberho_preview.webp" alt="Complesso nebuloso di Rho Ophiuchi"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Complesso di Rho Ophiuchi</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 45min</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                        <!-- Gallery Item 5: Pleiadi -->
+                        <article class="card">
+                            <a href="../assets/images/pleiadi.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/pleiadi_preview.webp"
+                                    alt="Pleiadi M45 - Ammasso stellare aperto"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Le Pleiadi</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 4h30</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!-- Gallery Item 7: Via Lattea -->
-                    <article class="card">
-                        <a href="../assets/images/vialattea.webp" target="_blank"
-                            style="text-decoration: none; color: inherit; display: block;">
-                            <img src="../assets/images/vialattea_preview.webp"
-                                alt="Via Lattea sopra il paesaggio notturno dell'Abruzzo"
-                                style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
-                            <div class="card-content" style="text-align: center;">
-                                <h3 class="card-title">Via Lattea</h3>
-                                <p
-                                    style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
-                                    Autore: Fabio Tempera</p>
-                                <div
-                                    style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                                    <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3</div>
-                                    <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
-                                    <div><strong style="color: #e0e0e0;">Esposizione:</strong> 10min</div>
-                                    <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                        <!-- Gallery Item 6: Rho Ophiuchi -->
+                        <article class="card">
+                            <a href="../assets/images/nuberho.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/nuberho_preview.webp"
+                                    alt="Complesso nebuloso di Rho Ophiuchi"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Complesso di Rho Ophiuchi</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 45min</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
+
+                        <!-- Gallery Item 7: Via Lattea -->
+                        <article class="card">
+                            <a href="../assets/images/vialattea.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/vialattea_preview.webp"
+                                    alt="Via Lattea sopra il paesaggio notturno dell'Abruzzo"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Via Lattea</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Fabio Tempera</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Montatura:</strong> Omegon Minitrack LX3
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Nikon D5300</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 10min</div>
+                                        <div><strong style="color: #e0e0e0;">Software:</strong> TStar</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Category: Telescopi Smart -->
+                <div class="category-section" data-category="smart" style="margin-bottom: 60px;">
+                    <h2
+                        style="color: var(--accent-cyan); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 30px;">
+                        Telescopi Smart</h2>
+                    <div class="grid-3">
+                        <!-- Gallery Item: Testa di Cavallo (Guido) -->
+                        <article class="card">
+                            <a href="../assets/images/horsehead-guido.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/horsehead-guido.webp" alt="Nebulosa Testa di Cavallo"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Testa di Cavallo</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Guido Di Vincenzo</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Telescopio:</strong> Seestar S30</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 15h42</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- Gallery Item: Nebulosa Rosetta -->
+                        <article class="card">
+                            <a href="../assets/images/rosetta-guido.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/rosetta-guido.webp" alt="Nebulosa Rosetta"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Nebulosa Rosetta</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Guido Di Vincenzo</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Telescopio:</strong> Seestar S30</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 15h10</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- Gallery Item: Nebulosa di Orione (Guido) -->
+                        <article class="card">
+                            <a href="../assets/images/orione-guido.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/orione-guido.webp" alt="Nebulosa di Orione"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Nebulosa di Orione</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Guido Di Vincenzo</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Telescopio:</strong> Seestar S30</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 10h56</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Category: Fotocamere Astronomiche -->
+                <div class="category-section" data-category="camera" style="margin-bottom: 60px;">
+                    <h2
+                        style="color: var(--accent-cyan); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 30px;">
+                        Fotocamere Astronomiche</h2>
+                    <div class="grid-3">
+                        <!-- Gallery Item: Giove -->
+                        <article class="card">
+                            <a href="../assets/images/giove-guido.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/giove-guido.webp" alt="Giove"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Giove</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Guido Di Vincenzo</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Telescopio:</strong> Vixen VMC 200L</div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> Svbony SC 715C</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 90s @ 156fps</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- Gallery Item: Sole -->
+                        <article class="card">
+                            <a href="../assets/images/sole-guido.webp" target="_blank"
+                                style="text-decoration: none; color: inherit; display: block;">
+                                <img src="../assets/images/sole-guido.webp" alt="Sole"
+                                    style="width: 100%; aspect-ratio: 3/2; object-fit: cover;">
+                                <div class="card-content" style="text-align: center;">
+                                    <h3 class="card-title">Sole</h3>
+                                    <p
+                                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">
+                                        Autore: Guido Di Vincenzo</p>
+                                    <div
+                                        style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; text-align: left; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                                        <div><strong style="color: #e0e0e0;">Telescopio:</strong> Rifrattore 115/800
+                                        </div>
+                                        <div><strong style="color: #e0e0e0;">Camera:</strong> ZWO ASI 178MM</div>
+                                        <div><strong style="color: #e0e0e0;">Esposizione:</strong> 60s @ 31fps</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
 
                 <!-- More Images Notice -->
