@@ -341,8 +341,9 @@ a:hover {
 /* Grid Layouts */
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 350px));
     gap: 30px;
+    justify-content: center;
 }
 
 .grid-2 {
